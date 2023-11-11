@@ -24,7 +24,7 @@ button {
     border: unset;
     outline: none;
     cursor: pointer;
-    padding: none;
+    padding: 0px;
 
 /*    display: flex;
     padding: 12px 24px;
@@ -212,7 +212,7 @@ button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);    
     padding: 16px 32px;
 
-    align: center;
+    align-items: center;
     margin-top: 48px;
 /*    display: inline-flex;
     align-items: flex-start;
@@ -321,7 +321,7 @@ button {
     display: inline-flex;
     /*flex-direction: column;*/
     align-items: flex-start;
-    margin-top: 72;
+    margin-top: 72px;
     /*margin-right: 15px;*/
 }
 
@@ -360,7 +360,7 @@ button {
     text-transform: capitalize;
     
     padding-top: 120px;
-    padding-bottom: 72x;
+    padding-bottom: 72px;
 }
 
 .team-list-item {
@@ -395,7 +395,7 @@ button {
 
     font-size: 20px;
     font-style: normal;
-    font-weight: 5400;
+    /*font-weight: 5400;*/
     line-height: 24px;  
 
     text-align: center;
@@ -464,7 +464,7 @@ button {
     line-height: 40px; /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    margin-bottom: 72px;*/
+    margin-bottom: 72px;
 }
 
 .customers-list {
@@ -475,7 +475,7 @@ button {
 }
 
 .customers-list-item:not(:last-child){
-    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .menu{
@@ -620,7 +620,8 @@ button {
 }
 
 .footer-list-item{
-    display: flex;
+    display: inline-block;
+    padding-right: 120px;
 }
 
 .footer-link{
@@ -650,10 +651,56 @@ button {
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
-    padding-bottom: 100px;
-    margin-top: 17.5px;
+    /*padding-bottom: 100px;
+    margin-top: 137.5px;
+    margin-left: 0px;*/
+    
 }
 
 .footer-sc{
     padding-top: 0px;
+}
+
+.footer-social-media{
+    padding-top: 101.5px;
+    color: var(--cloud);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+}
+
+.footer-1st {
+    margin-top: 17.5px;
+    margin-bottom: 100px;
+}
+
+.footer-item-icon-list {
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    margin-top: 16px;
+}
+
+.footer-item-icon-link{
+    width: 16px;
+    height: 16px;
+
+}
+
+.footer-item-icons-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+    background-color: var(--iris);
+    border-radius: 100px;
+
+}
+
+.footer-item-icons:not(:last-child){
+    margin-right: 16px;
 }
